@@ -12,6 +12,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    user-select: none;
 }
  
 html, body{
@@ -88,17 +89,129 @@ nav h3{
 }
 
 #page2{
+    height: 85vh;
+    width: 100%;
+    background-color: #fffcf1;
+}
+
+#p2element{
+    font-family: nb;
+    padding: 4.6vw 2.8vw;
+}
+
+#p2head{
+    padding: 1vw 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.8px black solid;
+}
+
+#p2head #lefty h2{ 
+    font-weight: 300;
+    font-size: 1.63vw;
+}
+
+#p2head #righty h2{
+    font-weight: 300;
+    font-size: 1.73vw;
+}
+
+#p2content h1{
+    padding: 1vw 0;
+    font-size: 4.2vw;
+    font-weight: 300;
+}
+
+#page3{
+    height: 39vw;
+    width: 100%;
+    background-color: #fffcf1;
+}
+
+#p3content{
+    padding: 11.5vw 28.2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: nb;
+}
+
+#agency{
+    padding-bottom: 1vw;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+
+#agency h5{
+    font-size: 1.15vw;
+    font-weight: 300;
+}
+
+#agency span{
+    font-size: 0.7vw;
+    padding: 0.3vw 0.4vw;
+    background-color: black;
+    color: #fff;
+    border-radius: 50px;
+    text-transform: capitalize;
+}
+
+#agency #arrow{
+    font-size: 15px;
+    color: black;
+    background-color: transparent;
+    align-items: center;
+    transform: rotate(-90deg);
+}
+
+#explore{
+    width: 120%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+}
+
+#explore h1{
+    font-size: 4.4vw;
+    font-weight: 400;
+}
+
+#page4{
     height: 100vh;
     width: 100%;
-    /* background-color: darkorange; */
+    padding: 0.75vw 3vw; 
+    background-color: #fffcf1;
+    font-family: nb;
 }
 
-#element{
-    
+#p4head{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-#element h1{
-
+#p4head #arrow{
+    font-size: 23px;
+    color: black;
+    background-color: transparent;
+    align-items: center;
+    /* transform: rotate(-90deg); */
+    transform: scale(-1,1);
 }
 
+#p4head #righty{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#p4head h3{
+    font-weight: 300;
+    font-size: 1.73vw;
+}
 
