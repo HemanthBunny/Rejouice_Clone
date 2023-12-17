@@ -1,4 +1,5 @@
-gsap.registerPlugin(ScrollTrigger);
+function locoScroll(){
+  gsap.registerPlugin(ScrollTrigger);
 
 // Using Locomotive Scroll from Locomotive https://github.com/locomotivemtl/locomotive-scroll
 
@@ -26,7 +27,8 @@ ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
 // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
 ScrollTrigger.refresh();
-
+}
+locoScroll()
 
 //home page cursor animation
 function cursorAnimation() {
@@ -76,5 +78,19 @@ function cursorAnimation() {
 cursorAnimation()
 
 function page2Animation(){
-
+  gsap.from("#p2content h1",{
+    y : 120,
+    opacity:0,
+    stagger : 0.25,
+    duration : 1,
+    scrollTrigger : {
+      trigger : "#page2",
+      scroller : "#main",
+      start : "top 40%",
+      end : "top 37%",
+      // markers : true,
+      scrub : 2
+    }
+  })
 }
+page2Animation()

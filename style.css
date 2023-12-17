@@ -121,6 +121,8 @@ nav h3{
     padding: 1vw 0;
     font-size: 4.2vw;
     font-weight: 300;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    line-height: 2.65rem;
 }
 
 #page3{
